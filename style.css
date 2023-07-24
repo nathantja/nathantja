@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffbf2;
+  color: #332620;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #fffbf2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #332620;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 16px;
+  transition: 0.15s;
+}
+
+.navbar a:hover {
+  color: #ff6a00;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.home-content p {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.home-content a {
+  color: #332620;
+}
+
+.home-content a:hover {
+  color: #ff6a00;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.about-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left img {
+  height: auto;
+  width: 50vw;
+  max-width: 300px;
+}
+
+.about-right {
+  width: 50%;
+}
+
+.about-right h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.about-right p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15%;
+}
+
+#contact div {
+  text-align: center;
+}
+
+#contact a {
+  background: transparent;
+  font-size: 50px;
+  color: #332620;
+  text-decoration: none;
+}
+
+#contact h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#contact a:hover,
+#contact h2:hover {
+  color: #ff6a00;
+}
+
+#resume {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.resume-left a {
+  background: transparent;
+  font-size: 50px;
+  color: #332620;
+  text-decoration: none;
+}
+
+.resume-left h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.resume-left a:hover,
+.resume-left h2:hover {
+  color: #ff6a00;
+}
+
+.resume-right iframe {
+  width: 550px;
+  height: 550px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .logo {
+    display: none;
+  }
+
+  .header {
+    padding: 15px 5%;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #about {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  #contact {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #contact div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contact a {
+    display: flex;
+  }
+
+  .resume-left {
+    display: flex;
+  }
+
+  .resume-left a {
+    display: flex;
+  }
+
+  .resume-right {
+    display: none;
+  }
+}
+
+
+/*
+Colors
+#fffbf2 - Light Cream
+#332620 - Brown
+#ff6a00 - Orange
+*/
